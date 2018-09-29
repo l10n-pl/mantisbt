@@ -1,21 +1,21 @@
 <?php
-/** MantisBT - a php based bugtracking system
- *
- * Copyright (C) 2000 - 2002  Kenzaburo Ito - kenito@300baud.org
- * Copyright (C) 2002 - 2016  MantisBT Team - mantisbt-dev@lists.sourceforge.net
- *
- * MantisBT is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * MantisBT is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with MantisBT.  If not, see <http://www.gnu.org/licenses/>.
+# MantisBT - A PHP based bugtracking system
+
+# MantisBT is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# MantisBT is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with MantisBT.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Language File - Polish (polski)
  *
  * **********************************************************************
  * ** This file contains translations stored in translatewiki.net.     **
@@ -29,14 +29,14 @@
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
- */
-/** Polish (polski)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
  *
  * @ingroup Language
  * @file
+ * @copyright Copyright 2002  MantisBT Team - mantisbt-dev@lists.sourceforge.net
+ * @link http://www.mantisbt.org
  *
  * @author Alan ffm
  * @author BeginaFelicysym
@@ -56,9 +56,12 @@
  * @author Szmyk
  * @author Ty221
  * @author Woytecr
- */
+*/
 
+# Script directionality (currently supported: ltr and rtl) 
 $s_directionality = 'ldp';
+
+# Group commands menuitems
 $s_actiongroup_menu_move = 'Przenieś';
 $s_actiongroup_menu_copy = 'Kopiuj';
 $s_actiongroup_menu_assign = 'Przypisz';
@@ -81,6 +84,8 @@ $s_actiongroup_menu_add_note = 'Dodaj komentarz';
 $s_actiongroup_menu_attach_tags = 'Dołącz tagi';
 $s_actiongroup_bugs = 'Wybrane zgłoszenia';
 $s_actiongroup_error_issue_is_readonly = 'Zgłoszenie jest tylko do odczytu.';
+
+# new strings:
 $s_all_projects = 'Wszystkie projekty';
 $s_move_bugs = 'Przenieś zgłoszenia';
 $s_operation_successful = 'Operacja została zakończona pomyślnie.';
@@ -131,17 +136,20 @@ $s_empty_password_sure_msg = 'Użytkownik ma puste hasło. Czy na pewno tego chc
 $s_empty_password_button = 'Użyj pustego hasła';
 $s_reauthenticate_title = 'Autoryzuj';
 $s_reauthenticate_message = 'Odwiedzasz bezpieczną stronę a Twoja sesja wygasła. Dokonaj ponownej autoryzacji aby kontynuować.';
+
 $s_no_category = '(brak kategorii)';
 $s_global_categories = 'Kategorie główne';
 $s_inherit = 'Kategorie odziedziczone';
 $s_inherit_global = 'Odziedziczone kategorie główne';
 $s_inherit_parent = 'Odziedziczone kategorie o poziom wyższe';
 $s_update_subproject_inheritance = 'Uaktualnij dziedziczone podprojekty';
+
 $s_duplicate_of = 'kopia';
 $s_has_duplicate = 'istnieje kopia';
 $s_related_to = 'związane z';
 $s_dependant_on = 'nadrzędne dla';
 $s_blocks = 'potomne';
+
 $s_new_bug = 'Nowe zgłoszenie';
 $s_bugnote_added = 'Dodano komentarz';
 $s_bugnote_edited = 'Edytowano komentarz';
@@ -153,15 +161,24 @@ $s_steps_to_reproduce_updated = 'Zaktualizowano kroki, by powtórzyć';
 $s_file_added = 'Dodano plik';
 $s_file_deleted = 'Usunięto plik';
 $s_bug_deleted = 'Zgłoszenie usunięto';
+
 $s_make_private = 'Zmień status na prywatny';
 $s_make_public = 'Zmień status na publiczny';
+
 $s_create_new_project_link = 'Stwórz nowy projekt';
+
 $s_login_link = 'Zaloguj się';
+
+# Browser Search - %s is the Search Engine title (@see $g_search_title)
 $s_opensearch_id_short = '%s Numer';
 $s_opensearch_id_description = '%s: szukaj po numerze zgłoszenia';
 $s_opensearch_text_short = '%s Tekst';
 $s_opensearch_text_description = '%s: pełne wyszukiwanie';
+
+# comboboxes default to this to instruct user to explicitly select an entry.
 $s_select_option = '(wybierz)';
+
+# bug_actiongroup_page.php : mass treatment
 $s_bug_actiongroup_access = 'Nie masz wystarczających uprawnień by wykonać tę akcję.';
 $s_bug_actiongroup_status = 'Nie można ustawić zgłoszeniu żądanego statusu';
 $s_bug_actiongroup_category = 'Zgłoszenie nie może zostać umieszczone w wybranej kategorii';
@@ -200,29 +217,45 @@ $s_due_date_group_bugs_button = 'Zaktualizuj termin realizacji';
 $s_update_severity_title = 'Aktualizacja pola Ważność';
 $s_update_severity_msg = 'Wybierz ważność zgłoszenia';
 $s_update_severity_button = 'Aktualizacja ważności';
+
+# print_all_bug_page.php : display selected issues
 $s_hide_button = 'Wyświetl tylko zaznaczone';
+
+# print_all_bug_options.php : printing preferences
 $s_printing_preferences_title = 'Wybierz pola do wydruku';
 $s_printing_options_link = 'Opcje drukowania';
+
+# word and excel export
 $s_bugnote_title = 'Autor';
 $s_bugnote_date = 'Data komentarza';
 $s_bugnote_description = 'Treść komentarza';
+
 $s_error_no_proceed = 'Proszę użyć przycisku „Wstecz” w przeglądarce by powrócić do poprzedniej strony. Tam można poprawić to co spowodowało błąd lub wybrać inną operację. Można również kliknąć opcję w górnym menu, aby przejść bezpośrednio do innej sekcji.';
 $s_login_error = 'Twoje konto może być wyłączone lub nazwa użytkownika/hasło nie są poprawne.';
 $s_login_cookies_disabled = 'Twoja przeglądarka nie obsługuje ciasteczek lub ich obsługa została wyłączona.';
+
+# General Strings
 $s_go_back = 'Powrót';
 $s_proceed = 'Dalej';
+
 $s_switch = 'Przełącz';
 $s_logged_in_as = 'Zalogowano jako';
+
 $s_prefix_for_deleted_users = 'użytkownik';
+
 $s_administrator = 'administrator';
 $s_myself = 'Ja';
 $s_default_access_level = 'Domyślny poziom dostępu';
+
 $s_issue_status_percentage = 'Status procentowy zgłoszenia';
+
+# Enum Strings
 $s_access_levels_enum_string = '10:obserwator,25:zgłaszający,40:aktualizujący,55:wykonawca,70:zarządca,90:administrator';
 $s_no_access = 'brak dostępu';
 $s_project_status_enum_string = '10:tworzony,30:ukończony,50:stabilny,70:zarzucony';
 $s_project_view_state_enum_string = '10:publiczny,50:prywatny';
 $s_view_state_enum_string = '10:publiczny,50:prywatny';
+
 $s_priority_enum_string = '10:żaden,20:niski,30:normalny,40:wysoki,50:pilny,60:natychmiastowy';
 $s_severity_enum_string = '10:propozycja,20:błahy,30:tekst,40:poprawka,50:drobny,60:ważny,70:błąd krytyczny,80:blokujący';
 $s_reproducibility_enum_string = '10:zawsze,30:czasami,50:losowo,70:nie próbowano,90:nie do powtórzenia,100:nie dotyczy';
@@ -231,6 +264,8 @@ $s_resolution_enum_string = '10:otwarty,20:poprawiony,30:ponownie otwarty,40:nie
 $s_projection_enum_string = '10:brak,30:poprawka,50:większa poprawka,70:duży nakład pracy,90:przeprojektowanie';
 $s_eta_enum_string = '10:żaden,20:< 1 dzień,30:2-3 dni,40:< 1 tydzień,50:< 1 miesiąc,60:> 1 miesiąc';
 $s_sponsorship_enum_string = '0:Nieopłacony,1:Żądanie zapłaty,2:Opłacony';
+
+# E-mail Strings
 $s_new_account_subject = 'Rejestracja konta';
 $s_new_account_greeting = 'Dziękujemy za rejestrację. Twoje konto nazwa się „%1$s”. Aby zakończyć rejestrację, odwiedź podany adres URL (upewnij się, że jest wprowadzony w jednej linii) i ustaw swoje hasło dostępu:';
 $s_new_account_greeting_admincreated = 'Użytkownik %1$s stworzył dla Ciebie konto „%2$s”. W celu zakończenia rejestracji, odwiedź następujący adres URL (sprawdź, czy cały adres jest wpisany w jednej linii) i ustaw własne hasło dostępu:';
@@ -240,10 +275,12 @@ $s_new_account_do_not_reply = 'Nie odpowiadaj na tą wiadomość';
 $s_new_account_email = 'E-mail:';
 $s_new_account_IP = 'Zdalny adres IP:';
 $s_new_account_signup_msg = 'Następujące konto zostało założone:';
+
 $s_reset_request_msg = 'Ktoś (prawdopodobnie Ty) zażądał zmiany hasła przez weryfikację e-mailem. Jeśli to nie Ty, zignoruj tę wiadomość.
 
 Jeśli prosiłeś o to, odwiedź poniższy adres aby zmienić hasło:';
 $s_reset_request_in_progress_msg = 'Jeśli nazwa użytkownika i adres e-mail dla twojego konta są prawidłowe to prześlemy teraz wiadomość potwierdzającą na podany adres. Gdy otrzymasz wiadomość, postępuj zgodnie z podanymi w niej instrukcjami i zmień hasło.';
+
 $s_email_notification_title_for_status_bug_new = 'Następujące zgłoszenie ma ustawiony status NOWY (ponownie)';
 $s_email_notification_title_for_status_bug_feedback = 'Następujące zgłoszenie wymaga OBSŁUGI.';
 $s_email_notification_title_for_status_bug_acknowledged = 'Następujące zgłoszenie zostało ZATWIERDZONE.';
@@ -275,6 +312,7 @@ $s_email_notification_title_for_action_relationship_child_resolved = 'Zgłoszeni
 $s_email_notification_title_for_action_relationship_child_closed = 'Zgłoszenie POTOMNE %1$s zostało ZAMKNIĘTE.';
 $s_email_notification_title_for_action_related_issue_deleted = 'Zgłoszenie POWIĄZANE %1$s zostało USUNIĘTE.';
 $s_email_notification_title_for_action_monitor = 'Zgłoszenie %1$s obecnie jest obserwowane przez użytkownika %2$s.';
+
 $s_email_reporter = 'Zgłaszający';
 $s_email_handler = 'Operator';
 $s_email_project = 'Projekt';
@@ -296,10 +334,16 @@ $s_email_additional_information = 'Dodatkowe informacje';
 $s_email_steps_to_reproduce = 'Kroki prowadzące do odtworzenia';
 $s_email_tag = 'Tagi';
 $s_email_due_date = 'Termin realizacji';
+
+# account_delete.php
 $s_account_protected_msg = 'Konto zostało zabezpieczone. Nie można zmienić ustawień...';
 $s_account_removed_msg = 'Twoje konto zostało usunięte...';
+
+# account_delete_page.php
 $s_confirm_delete_msg = 'Czy na pewno chcesz usunąć swoje konto?';
 $s_delete_account_button = 'Usuń Konto';
+
+# account_page.php
 $s_manage_profiles_link = 'Profile';
 $s_change_preferences_link = 'Preferencje';
 $s_edit_account_title = 'Edycja konta';
@@ -319,6 +363,8 @@ $s_access_level_label = 'Poziom dostępu';
 $s_update_user_button = 'Aktualizuj';
 $s_verify_warning = 'Informacja o Twoim koncie została zweryfikowana.';
 $s_verify_change_password = 'Musisz ustawić swoje hasło tutaj, aby móc się zalogować ponownie.';
+
+# API tokens page
 $s_api_tokens_link = 'Tokeny API';
 $s_api_token_create_form_title = 'Utwórz Token API';
 $s_api_token_create_button = 'Utwórz Token API';
@@ -330,6 +376,8 @@ $s_api_token_revoke_button = 'Odwołaj';
 $s_api_token_never_used = 'Nigdy nie używany';
 $s_api_token_revoked = 'Token API "%s" odwołany.';
 $s_last_used = 'Ostatnio używany';
+
+# account_prefs_page.php
 $s_default_account_preferences_title = 'Preferencje konta';
 $s_default_project = 'Domyślny projekt';
 $s_refresh_delay = 'Opóźnienie odświeżania';
@@ -356,15 +404,29 @@ $s_font_family = 'Rodzina czcionek';
 $s_update_prefs_button = 'Aktualizuj';
 $s_reset_prefs_button = 'Przywróć ustawienia';
 $s_timezone = 'Strefa czasowa';
+
+# account_prefs_reset.php
 $s_prefs_reset_msg = 'Preferencje zostały przywrócone...';
+
+# account_prefs_update.php
 $s_prefs_updated_msg = 'Preferencje zostały zaktualizowane...';
+
+# account_profile_add.php
 $s_profile_added_msg = 'Profil został dodany...';
+
+# account_profile_delete.php
 $s_profile_deleted_msg = 'Profil został usunięty...';
+
+# account_profile_edit_page.php
 $s_edit_profile_title = 'Edycja profilu';
 $s_platform = 'Platforma';
 $s_additional_description = 'Dodatkowy opis';
 $s_update_profile_button = 'Zaktualizuj';
+
+# account_profile_make_default.php
 $s_profile_defaulted_msg = 'Standardowy profil został zaktualizowany...';
+
+# account_profile_manage_page.php
 $s_add_profile_title = 'Dodanie profilu';
 $s_add_profile_button = 'Dodaj profil';
 $s_edit_or_delete_profiles_title = 'Edycja lub usunięcie profilu';
@@ -373,7 +435,11 @@ $s_make_default = 'Ustaw jako domyślny';
 $s_delete_profile = 'Usuń profil';
 $s_select_profile = 'Wybierz profil';
 $s_submit_button = 'Wyślij';
+
+# account_profile_update.php
 $s_profile_updated_msg = 'Profil został zaktualizowany...';
+
+# account_sponsor_page.php
 $s_my_sponsorship = 'Moje sponsorowanie';
 $s_update_sponsorship_button = 'Zmień stan płatności';
 $s_no_sponsored = 'Nie znaleziono sponsorowanych zgłoszeń przypisanych Tobie.';
@@ -387,12 +453,20 @@ $s_total_owing = 'Łącznie zaległych';
 $s_total_paid = 'Łącznie opłaconych';
 $s_sponsor_hide = 'Ukryj rozwiązane i opłacone';
 $s_sponsor_show = 'Pokaż wszystkie';
+
+# account_sponsor_update.php
 $s_payment_updated = 'Informacja o płatności została uaktualniona.';
+
+# account_update.php
 $s_account_updated_msg = 'Twoje konto zostało zaktualizowane...';
 $s_email_updated = 'Adres e-mail został zaktualizowany';
 $s_realname_updated = 'Imię i nazwisko zaktualizowane';
 $s_password_updated = 'Hasło zostało zaktualizowane';
+
+# bug_action_group_page
 $s_multiple_projects = 'Wybrane zgłoszenia należą do różnych projektów. Poniższe parametry pokazują ustawienia dla wszystkich projektów. Jeśli jest to niepoprawne, spróbuj wybrać mniejszą liczbę zgłoszeń.';
+
+# bug_change_status_page.php
 $s_new_bug_title = 'Nowe zgłoszenie';
 $s_feedback_bug_title = 'Zwróć zgłoszenie do ponownej obsługi';
 $s_acknowledged_bug_title = 'Uznaj zgłoszenie';
@@ -403,14 +477,28 @@ $s_feedback_bug_button = 'Zwróć';
 $s_acknowledged_bug_button = 'Uznaj';
 $s_confirmed_bug_button = 'Potwierdź';
 $s_assigned_bug_button = 'Przypisz';
+
+# bug_close.php
 $s_bug_close_msg = 'Zgłoszenie zostało zamknięte...';
 $s_close_immediately = 'Zamknij natychmiast:';
+
+# bug_close_page.php
 $s_closed_bug_title = 'Zamykanie zgłoszenia';
+
+# bug_delete.php
 $s_bug_deleted_msg = 'Zgłoszenie zostało usunięte...';
+
+# bug_delete_page.php
 $s_delete_bug_sure_msg = 'Czy na pewno chcesz usunąć to zgłoszenie?';
 $s_delete_bug_button = 'Usuń zgłoszenie';
+
+# bug_monitor_add.php
 $s_monitor_bug_button = 'Obserwuj';
+
+# bug_monitor_delete.php
 $s_unmonitor_bug_button = 'Zakończ obserwowanie zgłoszenia';
+
+# bugnote_add_inc.php
 $s_upload_file = 'Prześlij plik';
 $s_upload_files = 'Prześlij pliki';
 $s_select_file = 'Wybierz plik';
@@ -418,14 +506,23 @@ $s_select_files = 'Wybierz pliki';
 $s_upload_file_button = 'Prześlij plik';
 $s_upload_files_button = 'Prześlij pliki';
 $s_max_file_size_label = 'Maksymalny rozmiar:';
+$s_file_size_info = '%1$s %2$s'; # $1 = size, $2 = unit (e.g. kb, bytes)
+
+# bug_reopen.php
 $s_bug_reopened_msg = 'Zgłoszenie zostało ponownie otwarte...';
 $s_reopen_add_bugnote_title = 'Dodaj komentarz z wyjaśnieniem powodu ponownego otwarcia zgłoszenia';
 $s_bugnote_add_reopen_button = 'Dodaj komentarz i ponownie otwórz zgłoszenie';
+
+# bug_resolve_page.php
 $s_resolved_bug_title = 'Rozwiązanie zgłoszenia';
 $s_resolved_bug_button = 'Rozwiąż zgłoszenie';
+
+# bug_resolve_page2.php
 $s_bug_resolved_msg = 'Zgłoszenie zostało rozwiązane. Poniżej wprowadź komentarz...';
 $s_resolve_add_bugnote_title = 'Dodawanie komentarza z wyjaśnieniem rozwiązania zgłoszenia';
 $s_bugnote_add_resolve_button = 'Dodaj komentarz';
+
+# bug_reminder_page.php
 $s_from = 'Od';
 $s_to = 'Do';
 $s_sent_you_this_reminder_about = 'wysłał ci przypomnienie o';
@@ -435,13 +532,26 @@ $s_reminder_sent_none = 'Przypomnienia nie mogły zostać wysłane';
 $s_reminder_list_truncated = 'lista odbiorców skrócona';
 $s_bug_send_button = 'Wyślij';
 $s_reminder = 'Przypomnienie';
+$s_reminder_mentions = 'You can now mention users to trigger notifications for them instead of using reminders feature.  For example, others can mention you by writing %1s in issues and notes and you will get an email notification.';
 $s_reminder_explain = 'Ten komentarz zostanie wysłany do osób obserwujących zgłoszenie.';
 $s_reminder_monitor = 'Następujący odbiorcy zaczną obserwować zgłoszenie. Mogą zrezygnować za pomocą przycisku zakończenia obserwowania.';
 $s_reminder_store = 'Komentarz zostanie zapisany razem ze zgłoszeniem.';
+
+# mentions
+$s_mentioned_you = 'mentioned you on:';
+$s_mentioned_in = 'Mentioned in %1$s';
+
+# bug_set_sponsorship.php
 $s_confirm_sponsorship = 'Proszę potwierdzić chęć sponsorowania zgłoszenia %1$d liczbą %2$s.';
+
+# bug_stick.php
 $s_stick_bug_button = 'Przyklej';
 $s_unstick_bug_button = 'Odklej';
+
+# bug_update.php
 $s_bug_updated_msg = 'Zgłoszenie zostało pomyślnie zaktualizowane...';
+
+# bug_update_page.php
 $s_back_to_bug_link = 'Powrót do zgłoszenia';
 $s_update_simple_link = 'Edycja prosta';
 $s_updating_bug_advanced_title = 'Aktualizacja informacji o zgłoszeniu';
@@ -472,7 +582,11 @@ $s_steps_to_reproduce = 'Kroki, by powtórzyć';
 $s_update_information_button = 'Aktualizuj informację';
 $s_sticky_issue = 'Zgłoszenie przyklejone';
 $s_profile = 'Profil';
+
+# bug_update_page.php
 $s_updating_bug_simple_title = 'Aktualizacja informacji o zgłoszeniu';
+
+# bug_view*
 $s_view_revisions = 'Wyświetl wersje';
 $s_view_num_revisions = 'Zobacz edycje %1$d';
 $s_revision = 'Wersja';
@@ -484,41 +598,69 @@ $s_all_revisions = 'Wszystkie wersje';
 $s_back_to_issue = 'Powrót do zgłoszenia';
 $s_confirm_revision_drop = 'Czy na pewno chcesz odrzucić tę wersję z błędem?';
 $s_activities_title = 'Aktywności';
+
+# bug_vote_add.php
 $s_vote_added_msg = 'Głos został dodany...';
+
+# bugnote_add.php
 $s_bugnote_attached_files = 'Załączone pliki:';
+
+# bugnote_delete.php
 $s_bugnote_deleted_msg = 'Komentarz został pomyślnie usunięty...';
 $s_bug_notes_title = 'Komentarze';
+
+# bugnote_edit_page.php
 $s_edit_bugnote_title = 'Edytuj Komentarz';
+
+# bugnote_inc.php
 $s_no_bugnotes_msg = 'Brak komentarzy do tego zgłoszenia.';
 $s_delete_link = 'Usuń';
 $s_add_bugnote_title = 'Dodawanie komentarza';
 $s_add_bugnote_button = 'Dodaj komentarz';
 $s_bugnote_edit_link = 'Edytuj';
 $s_closed_bug_button = 'Zamknij zgłoszenie';
+
+# bugnote_update.php
 $s_bugnote_updated_msg = 'Komentarz został pomyślnie zaktualizowany...';
 $s_last_edited = 'Ostatnio edytowane:';
+
+# file_api.php
 $s_hide_content = 'Ukryj zawartość';
 $s_show_content = 'Pokaż zawartość';
+
+# html_api.php
 $s_webmaster_contact_information = 'Skontaktuj się z <a href="mailto:%1$s" title="Napisz e-mail do webmastera">administratorem</a> w celu uzyskania pomocy';
 $s_total_queries_executed = '%1$d wszystkich wykonanych zapytań.';
 $s_unique_queries_executed = '%1$d wykonanych unikalnych zapytań.';
 $s_total_query_execution_time = 'Całkowity czas wykonania zapytania: %1$s sekund';
 $s_page_execution_time = 'Czas generowania strony: %1$s sekund';
 $s_memory_usage_in_kb = 'Wykorzystanie pamięci: %1$s KB';
+
+# log_api.php
 $s_log_page_number = 'Numer';
 $s_log_page_time = 'Czas wykonania';
+$s_log_page_caller = 'Caller';
 $s_log_page_event = 'Wydarzenie';
+
+# print_api.php
 $s_please_report = 'Należy poinformować o tym %1$s.';
+
+# index.php
 $s_click_to_login = 'Zaloguj';
+
+# login.php
 $s_warning_plain_password_authentication = '<strong>UWAGA:</strong> Wykorzystywane jest proste uwierzytelnianie, co powoduje, że Twoje hasło będzie widoczne dla administratorów.';
 $s_warning_default_administrator_account_present = '<strong>UWAGA:</strong> Powinieneś wyłączyć domyślne konto \'administrator\' lub zmienić jego hasło.';
 $s_warning_admin_directory_present = '<strong>UWAGA:</strong> Katalog „admin” powinien zostać usunięty lub zablokowany.';
 $s_warning_change_setting = '<strong>Uwaga:</strong> "%1$s" nie jest ustawiona na wartość domyślną (%2$s).';
 $s_warning_security_hazard = 'To niesie potencjalne zagrożenie bezpieczeństwa, ponieważ może doprowadzić do ujawnienia poufnych informacji.';
 $s_warning_integrity_hazard = 'To sprawi, że MantisBT będzie kontynuować pracę, gdy pojawią się błędy, i może prowadzić do problemów z integralnością danych systemu.';
+$s_warning_debug_email = '<strong>Warning:</strong> "<code>debug_email</code>" is not set to <code>OFF</code>, all notification e-mails will be sent to "%1$s".';
 $s_error_database_no_schema_version = '<strong>BŁĄD:</strong> Struktura bazy danych może być nieaktualna (funkcja config(databaseversion) zwróciła 0 i brak jest starych tabel do aktualizacji). Sprawdź, czy baza danych jest uruchomiona – nie możemy sprawdzić wersji schematu bazy danych. Tabela konfiguracji nie zwróciła prawidłowej wersji schematu bazy danych – możesz poprosić o pomoc na liście e-mailowej mantis–help, jeśli jest to konieczne.';
 $s_error_database_version_out_of_date_2 = '<strong>UWAGA!</strong> Struktura bazy danych może być nieaktualna. <a href="admin/install.php">Uaktualnij</a> przed zalogowaniem się.';
 $s_error_code_version_out_of_date = '<strong>UWAGA!</strong> Struktura bazy danych jest nowsza od zainstalowanego kodu. Uaktualnij oprogramowanie.';
+
+# login_page.php
 $s_login_page_info = 'Witaj w programie do śledzenia i rozwiązywania zgłoszeń.';
 $s_login_title = 'Logowanie';
 $s_save_login = 'Nie wylogowuj mnie';
@@ -530,26 +672,38 @@ $s_signup_link = 'Załóż nowe konto';
 $s_lost_password_link = 'Zapomniałem hasła';
 $s_username_or_email = 'Nazwa użytkownika lub adres e-mail';
 $s_enter_password = 'Podaj hasło dla \'%s\'';
+
+# login_select_proj_page.php
 $s_select_project_button = 'Wybierz projekt';
+
+# lost_pwd_page.php
 $s_lost_password_title = 'Resetowanie hasła';
 $s_lost_password_done_title = 'Wiadomość o haśle wysłana';
 $s_lost_password_subject = 'Resetowanie hasła';
 $s_lost_password_info = 'Aby zmienić zapomniane hasło, proszę podać nazwę użytkownika i adres e-mail dla konta.<br /><br />Jeśli podane dane odpowiadają poprawnemu kontu, otrzymasz w wiadomości e-mail specjalny adres URL zawierający kod weryfikujący dla twojego konta. Proszę otworzyć podany adres aby zmienić hasło.';
 $s_lost_password_confirm_hash_OK = 'Twoje potwierdzenie zostało zaakceptowane. Proszę zmienić hasło.';
+
+# main_page.php
 $s_open_and_assigned_to_me_label = 'Otwarte i przypisane do mnie:';
 $s_open_and_reported_to_me_label = 'Otwarte i zgłoszone przeze mnie:';
 $s_newer_news_link = 'Nowsze wiadomości';
 $s_older_news_link = 'Starsze wiadomości';
 $s_archives = 'Archiwum';
 $s_rss = 'RSS';
+
+# manage_overview_page
 $s_site_information = 'Informacje o witrynie';
 $s_mantis_version = 'Wersja MantisBT';
 $s_schema_version = 'Wersja schematu';
 $s_site_path = 'Ścieżka na serwerze';
 $s_core_path = 'Ścieżka katalogu core';
 $s_plugin_path = 'Ścieżka katalogu plugin';
+
+# manage_create_new_user.php
 $s_created_user_part1 = 'Utworzono użytkownika';
 $s_created_user_part2 = 'z poziomem dostępu';
+
+# manage_create_user_page.php
 $s_create_new_account_title = 'Tworzenie nowego konta';
 $s_verify_password = 'Potwierdź hasło';
 $s_enabled = 'Włączone';
@@ -557,6 +711,8 @@ $s_enabled_label = 'Włączony';
 $s_protected = 'Zabezpieczone';
 $s_protected_label = 'Zabezpieczone';
 $s_create_user_button = 'Stwórz użytkownika';
+
+# manage_page.php
 $s_hide_disabled = 'Ukryj wyłączone';
 $s_filter_button = 'Filtruj';
 $s_default_filter = 'Domyślny filtr';
@@ -590,7 +746,12 @@ $s_date_created = 'Stworzone';
 $s_last_visit = 'Ostatnia wizyta';
 $s_last_visit_label = 'Ostatnia wizyta:';
 $s_edit_user_link = 'Edytuj dane';
+$s_search_user_hint = 'Username, Real Name or E-mail';
+
+# manage_custom_field_edit_page.php
 $s_separate_list_items_by = '(oddziel poszczególne elementy listy za pomocą "%1$s")';
+
+# manage_config_email_page
 $s_config_all_projects = 'Uwaga: Ta konfiguracja dotyczy WSZYSTKICH PROJEKTÓW.';
 $s_config_project = 'Uwaga! Ta konfiguracja dotyczy tylko projektu %1$s.';
 $s_colour_coding = 'W tabeli oznaczono poniższymi kolorami, które ustawienia będą stosowane:';
@@ -609,6 +770,8 @@ $s_notify_defaults_change_access = 'Zmień użytkowników, którzy mogą zmieni�
 $s_notify_actions_change_access = 'Kto może zmieniać powiadomienia:';
 $s_revert_to_system = 'Usuń ustawienia wszystkich projektów';
 $s_revert_to_all_project = 'Usuń ustawienia dla tego projektu';
+
+# manage_config_workflow_page
 $s_non_existent = 'nie istnieje';
 $s_current_status = 'Bieżący status';
 $s_next_status = 'Następny status';
@@ -630,7 +793,11 @@ $s_desc_bug_resolved_status_threshold = 'Status który oznacza, że zgłoszenie 
 $s_desc_bug_closed_status_threshold = 'Status gdy problem jest uznawany za zamknięty';
 $s_workflow_change_access_label = 'Kto może zmienić przepływ pracy:';
 $s_access_change_access_label = 'Użytkownicy mogący zmieniać poziomy dostępu:';
+
+# manage_config_workflow_set
 $s_default_not_in_flow = 'Domyślna wartość „%1$s” nie została wybrana wśród następnych statusów dla „%2$s”. To ustawienie zostanie zignorowanie.';
+
+# manage_config_work_threshold_page
 $s_allowed_access_levels = 'Dozwolone dla każdego użytkownika z poziomem dostępu';
 $s_assign_issue = 'Przypisz zgłoszenie';
 $s_allow_reporter_close = 'Zezwól zgłaszającemu na zamknięcie zgłoszenia';
@@ -640,6 +807,7 @@ $s_edit_others_bugnotes = 'Edytuj komentarze innych';
 $s_edit_own_bugnotes = 'Edytuj własne komentarze';
 $s_delete_others_bugnotes = 'Usuń komentarze innych';
 $s_delete_own_bugnotes = 'Usuń własne komentarze';
+$s_change_view_state_own_bugnotes = 'Change view state of own notes';
 $s_limit_access = 'Ogranicz dostęp zgłaszających tylko do ich zgłoszeń';
 $s_submit_status = 'Status ustawiany nowemu zgłoszeniu';
 $s_assigned_status = 'Status, na który ustawić automatycznie przypisane zgłoszenia';
@@ -647,9 +815,13 @@ $s_resolved_status = 'Status, dla którego zgłoszenie zostaje uznane za rozwią
 $s_readonly_status = 'Status, dla którego zgłoszenie jest tylko do odczytu';
 $s_reopen_status = 'Status, na który jest ustawiane ponownie otwierane zgłoszenie';
 $s_reopen_resolution = 'Rozwiązanie, na które jest ustawiane ponownie otwierane zgłoszenie';
+
+# manage_config_revert_page
 $s_config_delete_sure = 'Czy jesteś pewien, że chcesz usunąć ustawienia dla';
 $s_in_project = 'w projekcie';
 $s_delete_config_button = 'Usuń ustawienia';
+
+# adm_config_report.php
 $s_configuration_report = 'Raport z konfiguracji';
 $s_database_configuration = 'Konfiguracja bazy danych';
 $s_configuration_option = 'Opcje konfiguracji';
@@ -662,6 +834,8 @@ $s_configuration_corrupted = 'Konfiguracja w bazie danych jest uszkodzona.';
 $s_set_configuration_option_action_create = 'Utwórz opcję konfiguracji';
 $s_set_configuration_option_action_edit = 'Edytuj opcję konfiguracji';
 $s_set_configuration_option_action_clone = 'Skopiuj opcję konfiguracji';
+
+# manage_plugin_page.php
 $s_plugin = 'Wtyczka';
 $s_plugins_installed = 'Zainstalowane wtyczki';
 $s_plugins_available = 'Dostępne wtyczki';
@@ -683,20 +857,40 @@ $s_plugin_key_met = 'wtyczka gotowa';
 $s_plugin_key_unmet = 'niespełnione zależności';
 $s_plugin_key_dated = 'nieaktualne zależności';
 $s_plugin_key_upgrade = 'wymagana nowsza wersja';
+
+# manage_proj_add.php
 $s_project_added_msg = 'Projekt został pomyślnie dodany...';
+
+# manage_proj_category_add.php
 $s_category_added_msg = 'Kategoria została pomyślnie dodana...';
+
+# manage_proj_category_delete.php
 $s_category_deleted_msg = 'Kategoria została pomyślnie usunięta...';
+
+# manage_proj_category_delete_page.php
 $s_category_delete_sure_msg = 'Czy na pewno chcesz usunąć tę kategorię?<br />W kategorii „%1$s” jest %2$d błędów.';
 $s_category_delete_confirm_msg = 'Czy na pewno chcesz usunąć kategorię: "%1$s"?';
 $s_delete_category_button = 'Usuń kategorię';
+
+# manage_proj_category_edit_page.php
 $s_edit_project_category_title = 'Edycja kategorii';
 $s_update_category_button = 'Aktualizuj Kategorię';
+
+# manage_proj_category_update.php
 $s_category_updated_msg = 'Kategoria została pomyślnie zaktualizowana...';
+
+# manage_proj_create_page.php
 $s_create_first_project = 'Utwórz projekt, aby móc zapisywać problemy.';
 $s_add_subproject_title = 'Dodaj podprojekt';
+
+# manage_proj_delete.php
 $s_project_deleted_msg = 'Projekt został usunięty...';
+
+# manage_proj_delete_page.php
 $s_project_delete_msg = 'Czy na pewno chcesz usunąć ten projekt i wszystkie przypisane do tego projektu zgłoszenia?';
 $s_project_delete_button = 'Usuń projekt';
+
+# manage_proj_edit_page.php
 $s_edit_project_title = 'Edycja projektu';
 $s_project_name = 'Nazwa projektu';
 $s_project_name_label = 'Nazwa projektu:';
@@ -726,48 +920,79 @@ $s_create_new_subproject_link = 'Stwórz nowy podprojekt';
 $s_unlink_link = 'Odłącz';
 $s_show_global_users = 'Pokaż użytkowników o globalnym dostępie';
 $s_hide_global_users = 'Ukryj użytkowników o globalnym dostępie';
+
+# manage_proj_menu_page.php
 $s_add_project_title = 'Dodawanie projektu';
 $s_upload_file_path = 'Katalog dla przesyłanych plików';
 $s_add_project_button = 'Dodaj projekt';
 $s_projects_title = 'Projekty';
 $s_projects_title_label = 'Projekty';
 $s_name = 'Nazwa';
+
+# manage_proj_update.php
 $s_project_updated_msg = 'Projekt został zaktualizowany...';
+
+# manage_proj_version_add.php
 $s_version_added_msg = 'Nowa wersja została pomyślnie dodana...';
+
+# manage_proj_version_delete.php
 $s_version_deleted_msg = 'Wersja została pomyślnie usunięta...';
+
+# manage_proj_version_delete_page.php
 $s_version_delete_sure = 'Czy na pewno chcesz usunąć tę wersję?';
 $s_delete_version_button = 'Usuń wersję';
+
+# manage_proj_version_edit_page.php
 $s_edit_project_version_title = 'Edycja wersji projektu';
 $s_update_version_button = 'Aktualizuj wersję';
 $s_released = 'Opublikowana';
 $s_not_released = 'Jeszcze nie wypuszczone';
 $s_scheduled_release = 'Zaplanowane wypuszczenie';
 $s_obsolete = 'Przestarzałe';
+
+# manage_proj_version_update.php
 $s_version_updated_msg = 'Wersja została pomyślnie zaktualizowana...';
+
+# manage_user_delete.php
 $s_account_delete_protected_msg = 'Konto jest zabezpieczone. Nie można usunąć tego konta.';
 $s_account_deleted_msg = 'Konto zostało usunięte...';
+
+# manage_user_delete_page.php
 $s_delete_account_sure_msg = 'Czy na pewno chcesz usunąć to konto?';
+
+# manage_user_edit_page.php
 $s_notify_user = 'Powiadom użytkownika o tej zmianie';
+
+# manage_user_prune.php
 $s_accounts_pruned_msg = 'Wszystkie konta, na które nikt się nie logował i starsze niż tydzień zostały usunięte';
 $s_prune_accounts_button = 'Usuń';
 $s_confirm_account_pruning = 'Czy jesteś pewien, że chcesz usunąć stare konta, na które nikt nigdy się nie logował?';
+
+# manage_user_page.php
 $s_edit_user_title = 'Edycja Użytkownika';
 $s_account_unlock_button = 'Odblokuj konto';
 $s_reset_password_button = 'Nowe hasło';
 $s_delete_user_button = 'Usuń Użytkownika';
+$s_impersonate_user_button = 'Impersonate User';
 $s_reset_password_msg = 'Resetowanie hasła wysyła potwierdzający adres URL za pomocą e-maila.';
 $s_reset_password_msg2 = 'Po operacji \'Nowe hasło\' użytkownik nie będzie musiał podawać hasła przy logowaniu.';
 $s_show_all_users = 'WSZYSCY';
 $s_users_unused = 'NIEUŻYWANY';
 $s_users_new = 'NOWY';
+
+# manage_user_reset.php
 $s_account_reset_protected_msg = 'Konto zostało zabezpieczone. Nie można przypisać nowego hasła.';
 $s_account_reset_msg = 'Wiadomość potwierdzającą wysłano na adres e-mail wybranego użytkownika. Postępując zgodnie z jej zawartością użytkownik będzie mógł zmienić swoje hasło.';
 $s_account_reset_msg2 = 'Konto nie wymaga podawania hasła...';
 $s_account_unlock_msg = 'Konto zostało odblokowane.';
+
+# manage_user_update.php
 $s_manage_user_protected_msg = 'Konto zostało zabezpieczone; pola \'Poziomu dostępu\' i \'Włączenia\' nie mogą być zmienione. Inne pola zostały pomyślnie zaktualizowane.';
 $s_manage_user_updated_msg = 'Konto zostało zaktualizowane...';
 $s_email_user_updated_subject = 'Konto zaktualizowane';
 $s_email_user_updated_msg = 'Konto zostało zaktualizowane przez administratora. Lista zmian znajduje się poniżej. Możesz zmienić dane i preferencje swojego konta w dowolnym momencie, wchodząc na adres URL:';
+
+# menu_inc.php
 $s_main_link = 'Główna';
 $s_view_bugs_link = 'Zobacz';
 $s_report_bug_link = 'Dodaj';
@@ -782,6 +1007,8 @@ $s_docs_link = 'Dokumentacja';
 $s_logout_link = 'Wyloguj';
 $s_my_view_link = 'Mój widok';
 $s_invite_users = 'Zaproś osoby';
+
+# my_view_page.php
 $s_my_view_title_unassigned = 'Nieprzypisane';
 $s_my_view_title_recent_mod = 'Ostatnio zmodyfikowane';
 $s_my_view_title_reported = 'Zgłoszone przeze mnie';
@@ -791,14 +1018,24 @@ $s_my_view_title_monitored = 'Obserwowane przeze mnie';
 $s_my_view_title_feedback = 'Oczekujące na moją odpowiedź';
 $s_my_view_title_verify = 'Oczekujące na moje potwierdzenie rozwiązania';
 $s_my_view_title_my_comments = 'Zgłoszenia, które komentowałem';
+
+# news_add.php
 $s_news_added_msg = 'Nowa wiadomość została dodana...';
+
+# news_delete.php
 $s_news_deleted_msg = 'Wiadomość została usunięta...';
+
+# news_delete_page.php
 $s_delete_news_sure_msg = 'Czy na pewno chcesz usunąć wiadomość?';
 $s_delete_news_item_button = 'Usuń wiadomość';
+
+# news_edit_page.php
 $s_edit_news_title = 'Edycja wiadomości';
 $s_headline = 'Nagłówek';
 $s_body = 'Treść';
 $s_update_news_button = 'Aktualizuj wiadomość';
+
+# news_menu_page.php
 $s_add_news_title = 'Dodawanie wiadomości';
 $s_post_to = 'Wyślij do';
 $s_post_news_button = 'Wyślij wiadomość';
@@ -806,34 +1043,64 @@ $s_edit_or_delete_news_title = 'Edycja lub usuwanie wiadomości';
 $s_edit_post = 'Edytuj wiadomość';
 $s_delete_post = 'Usuń wiadomość';
 $s_select_post = 'Wybierz wiadomość';
+
+# news_update.php
 $s_news_updated_msg = 'Wiadomość została zaktualizowana...';
+
+# news_view_page.php
 $s_back_link = 'Powrót';
+
+# proj_doc_add.php
 $s_file_uploaded_msg = 'Plik został pomyślnie przesłany.';
+
+# proj_doc_add_page.php
 $s_upload_file_title = 'Przesyłanie pliku';
 $s_title = 'Tytuł';
+
+# proj_doc_delete.php
 $s_project_file_deleted_msg = 'Plik projektu został usunięty.';
+
+# proj_doc_delete_page.php
 $s_confirm_file_delete_msg = 'Czy na pewno chcesz usunąć ten plik?';
+
+# proj_doc_edit_page.php
 $s_filename = 'Nazwa pliku';
 $s_filename_label = 'Nazwa pliku:';
 $s_file_update_button = 'Aktualizuj plik';
 $s_file_delete_button = 'Usuń plik';
+
+# proj_doc_page.php
 $s_project_documentation_title = 'Dokumentacja projektu';
 $s_user_documentation = 'Dokumentacja użytkownika';
 $s_project_documentation = 'Dokumentacja projektu';
 $s_add_file = 'Dodaj plik';
+
+# proj_doc_update.php
 $s_project_document_updated = 'Projekt został pomyślnie zaktualizowany.';
+
+# proj_user_add.php
 $s_project_user_added_msg = 'Użytkownik został pomyślnie dodany do projektu.';
+
+# proj_user_delete.php
 $s_project_removed_user_msg = 'Użytkownik został pomyślnie usunięty z projektu.';
+
+# proj_user_delete_page.php
 $s_remove_user_sure_msg = 'Czy na pewno chcesz usunąć tego użytkownika?';
 $s_remove_user_button = 'Usuń użytkownika';
 $s_remove_all_users_sure_msg = 'Czy na pewno chcesz usunąć wszystkich użytkowników z tego projektu?';
 $s_remove_all_users_button = 'Usuń wszystkich użytkowników';
+
+# proj_user_menu_page.php
 $s_add_user_title = 'Dodawanie użytkownika do projektu';
 $s_add_user_button = 'Dodaj użytkownika';
 $s_project_selection_title = 'Wybór projektu';
 $s_remove_link = 'Usuń';
 $s_remove_all_link = 'Usuń wszystkich';
+
+# proj_user_update.php
 $s_updated_user_msg = 'Użytkownik został pomyślnie zaktualizowany.';
+
+# report_add.php
 $s_must_enter_category = 'Należy wybrać kategorię.';
 $s_must_enter_severity = 'Należy wybrać ważność zgłoszenia.';
 $s_must_enter_reproducibility = 'Należy wybrać powtarzalność zgłoszenia.';
@@ -841,6 +1108,8 @@ $s_must_enter_summary = 'Należy wpisać temat zgłoszenia.';
 $s_must_enter_description = 'Należy dodać opis zgłoszenia.';
 $s_report_more_bugs = 'Kontynuuj zgłaszanie';
 $s_submission_thanks_msg = 'Dziękujemy za utworzenie zgłoszenia.';
+
+# report_bug_advanced_page.php
 $s_simple_report_link = 'Zgłoszenie proste';
 $s_enter_report_details_title = 'Wprowadź szczegóły zgłoszenia';
 $s_required = 'wymagane';
@@ -852,24 +1121,40 @@ $s_assign_to = 'Przypisz do';
 $s_additional_information = 'Dodatkowe informacje';
 $s_submit_report_button = 'Wyślij zgłoszenie';
 $s_check_report_more_bugs = 'Kontynuuj zgłaszanie';
+
+# report_bug_page.php
 $s_report_stay = 'Pozostań w zgłoszeniu';
+
+# set_project.php
 $s_selected_project = 'Wybrany projekt';
 $s_valid_project_msg = 'Musisz wybrać prawidłowy projekt.';
+
+# signup.php
 $s_signup_done_title = 'Rejestracja konta wykonana.';
 $s_password_emailed_msg = 'Gratuluję pomyślnej rejestracji. Wysłana została właśnie wiadomość weryfikująca podany adres e-mail. Odwiedzając adres podany w tej wiadomości aktywujesz swoje konto.';
 $s_no_reponse_msg = 'Masz siedem dni na dokończenie procesu potwierdzania konta. Jeśli nie potwierdzisz go w tym okresie, konto zostanie usunięte.';
+
+# signup_page.php
 $s_signup_captcha_request_label = 'Wprowadź kod dokładnie tak, jak w prostokącie po prawej stronie:';
 $s_signup_captcha_refresh = 'Wygeneruj nowy kod';
 $s_signup_info = 'Po wypełnieniu formularza i sprawdzeniu twoich odpowiedzi, otrzymasz na podany adres e-mail wiadomość potwierdzającą.<br />Wiadomość ta umożliwi pełną aktywację konta. Jeśli nie aktywujesz go w ciągu 7 dni, konto zostanie usunięte.<br />Musisz podać poprawny adres e-mail, aby otrzymać wiadomość potwierdzającą.';
 $s_signup_title = 'Zapisywanie się';
 $s_signup_button = 'Zapisz się';
 $s_no_password_request = 'Twoje hasło jest zarządzane przez inny system. Skontaktuj się z administratorem.';
+
+# site_settings_edit_page.php
 $s_edit_site_settings_title = 'Edycja ustawień strony';
 $s_save_settings_button = 'Zapisz ustawienia';
+
+# site_settings_page.php
 $s_site_settings_title = 'Ustawienia strony';
 $s_system_info_link = 'Informacja o systemie';
 $s_site_settings_link = 'Ustawienia strony';
+
+# site_settings_update.php
 $s_site_settings_updated_msg = 'Ustawienia strony zostały zaktualizowane';
+
+# summary_page.php
 $s_summary_title = 'Statystyki';
 $s_summary_advanced_link = 'Zaawansowane statystyki';
 $s_by_project = 'Wg projektu';
@@ -902,6 +1187,9 @@ $s_total_time = 'ogólna długość';
 $s_developer_stats = 'statystyki wykonawców';
 $s_reporter_stats = 'statystyki zgłaszających';
 $s_orct = '(otwarty/rozwiązany/zamknięty/łącznie)';
+$s_summary_header = 'open/resolved/closed/total/resolved ratio/ratio';
+
+# view_all_bug_page.php
 $s_any = 'dowolny';
 $s_all = 'wszystkie';
 $s_show = 'Pokaż';
@@ -917,6 +1205,8 @@ $s_note_user_id = 'Komentarz od';
 $s_filter_match_type = 'Typ dopasowania';
 $s_filter_match_all = 'Wszystkie warunki';
 $s_filter_match_any = 'Dowolny warunek';
+
+# view_all_inc.php
 $s_none = 'żadne';
 $s_current = 'aktualne';
 $s_search = 'Szukaj';
@@ -936,6 +1226,8 @@ $s_open_filters = 'Zmień filtr';
 $s_or_unassigned = 'lub nieprzypisane';
 $s_ok = 'OK';
 $s_select_all = 'Wybierz wszystkie';
+
+# stored query strings
 $s_use_query = 'Użyj filtru';
 $s_delete_query = 'Skasuj filtr';
 $s_query_deleted = 'Filtr "%s" usunięty';
@@ -960,6 +1252,8 @@ $s_manage_filter_page_title = 'Zarządzaj filtrami';
 $s_manage_filter_edit_page_title = 'Edytuj filtr';
 $s_delete_filter_button = 'Usuń';
 $s_apply_filter_button = 'Zastosuj';
+
+# bug_view_advanced_page.php
 $s_view_simple_link = 'Widok prosty';
 $s_product_build = 'Kompilacja produktu';
 $s_system_profile = 'Opis systemu';
@@ -972,14 +1266,22 @@ $s_move_bug_button = 'Przenieś';
 $s_attached_files = 'Dołączone pliki';
 $s_publish = 'Opublikuj';
 $s_add_user_to_monitor = 'Dodaj';
+
+# view_bug_page.php
 $s_bug_view_title = 'Wyświetl szczegóły problemu';
+
+# bug_monitor_list_view_inc.php
 $s_no_users_monitoring_bug = 'Nikt nie obserwuje tego zgłoszenia.';
 $s_users_monitoring_bug = 'Użytkownicy obserwujący to zgłoszenie';
 $s_monitoring_user_list = 'Lista użytkowników';
+
+# bug_sponsorship_list_view_inc.php
 $s_no_users_sponsoring_bug = 'Nikt nie sponsoruje tych zgłoszeń.';
 $s_users_sponsoring_bug = 'Użytkownicy sponsorujący to zgłoszenie';
 $s_sponsors_list = 'Lista sponsorów';
 $s_total_sponsorship_amount = 'Sponsorowanie – łączna liczba = %1$s';
+
+# custom field strings
 $s_add_custom_field_button = 'Nowe pole niestandardowe';
 $s_delete_custom_field_button = 'Usuń pole niestandardowe';
 $s_delete_custom_field_everywhere = 'Usuń wszędzie pole niestandardowe';
@@ -1034,7 +1336,12 @@ $s_kb = 'KB';
 $s_attachment_missing = 'Brak załącznika';
 $s_attachment_count = 'Liczba załączników';
 $s_view_attachments_for_issue = 'Pokaż %1$d załączników dla zgłoszenia nr %2$d';
+$s_warning_update_custom_field_type = '<strong>Warning:</strong> Custom field "%1$s" already has stored values. Changing field type may cause errors and unexpected behaviour if existing values are not consistent with the field\'s new type. To proceed, click the button below';
+
+# PHPMailer
 $s_phpmailer_language = 'pl';
+
+# Sponsorship Strings
 $s_sponsors = '%1$d sponsor(ów)';
 $s_sponsorship_added = 'Sponsorowanie dodane';
 $s_sponsorship_updated = 'Sponsorowanie zaktualizowane';
@@ -1042,13 +1349,26 @@ $s_sponsorship_deleted = 'Sponsorowanie usunięte';
 $s_sponsorship_paid = 'Sponsorowanie opłacone';
 $s_sponsorship_more_info = 'Więcej informacji o sponsorowaniu';
 $s_sponsorship_total = 'Sponsorowanie – łączna liczba';
+
+# URL explaining the process of sponsoring an issue. This is defined here rather than
+# in the config to allow for a URL per language. This can be set to an empty string if there
+# is not need to provide such process information.
+$s_sponsorship_process_url = '';
+
+# Changelog
 $s_changelog = 'Lista zmian';
 $s_changelog_empty = 'Lista zmian niedostępna';
 $s_changelog_empty_manager = 'Brak dostępnych informacji o Liście Zmian. Problemy są uwzględniane, gdy projekty posiadają wersje, oraz są rozwiązywane przy pomocy "naprawiono w wersji".';
+
+# Roadmap
 $s_roadmap = 'Plan pracy';
 $s_resolved_progress = '%1$d z %2$d zgłoszeń zrealizowano. Postęp (%3$d%%).';
+$s_roadmap_empty = 'No Roadmap information available';
 $s_roadmap_empty_manager = 'Brak dostępnych informacji o Planie Pracy. Problemy pojawią się, gdy projekty mają przypisane wersje a problemy posiadają ustawioną "Wersję docelową".';
+
+# Http auth
 $s_http_auth_realm = 'Logowanie do MantisBT';
+
 $s_bug = 'zgłoszenie';
 $s_bugs = 'zgłoszeń';
 $s_add_new_relationship = 'Nowe powiązanie';
@@ -1071,6 +1391,8 @@ $s_copy_from_parent = 'Skopiuj rozszerzone dane z nadrzędnego problemu';
 $s_copy_notes_from_parent = 'Skopiuj notatki błędu';
 $s_copy_attachments_from_parent = 'Skopiuj załączniki';
 $s_with = 'z';
+
+# Relationship Graphs
 $s_viewing_bug_relationship_graph_title = 'Graf powiązań';
 $s_viewing_bug_dependency_graph_title = 'Wykres zależności';
 $s_relation_graph = 'Graf powiązań';
@@ -1078,6 +1400,8 @@ $s_dependency_graph = 'Graf zależności';
 $s_vertical = 'Pionowy';
 $s_horizontal = 'Poziomy';
 $s_view_issue = 'Zobacz zgłoszenie';
+
+# Permissions report
 $s_perm_rpt_capability = 'Uprawnienie';
 $s_view = 'Zobacz';
 $s_issues = 'ZGŁOSZENIA';
@@ -1137,18 +1461,30 @@ $s_email_on_deleted = 'E-mail przy usunięciu';
 $s_email_on_sponsorship_changed = 'E-mail przy zmianie sponsorowania';
 $s_email_on_relationship_changed = 'E-mail przy zmianie powiązania';
 $s_email_on_updated = 'E-mail dla aktualizacji.';
+
+# Dynamic filters (load filter controls via AJAX upon request)
 $s_loading = 'Ładuję...';
+
+# filter_api.php
 $s_between_date = 'Pomiędzy';
 $s_on_or_before_date = 'W lub przed';
 $s_before_date = 'Przed';
 $s_after_date = 'Po';
 $s_on_or_after_date = 'W lub po';
+
+# Date constants
 $s_from_date = 'Od';
 $s_to_date = 'Do';
 $s_on_date = 'Dnia';
+
+# Switch constants
 $s_on = 'Dnia';
 $s_off = 'Wyłącz';
+
+# wiki related strings
 $s_wiki = 'Wiki';
+
+# Tagging
 $s_tags = 'Znaczniki';
 $s_tag_details = 'Szczegóły znacznika %1$s';
 $s_tag_id = 'Identyfikator tagu';
@@ -1172,6 +1508,7 @@ $s_tag_detach = 'Odłącz „%1$s”';
 $s_tag_separate_by = '(Rozdziel używając „%1$s”)';
 $s_tag_invalid_name = 'Nieprawidłowa nazwa tagu.';
 $s_tag_create_denied = 'Brak uprawnień do utworzenia.';
+$s_tag_attach_denied = 'Attach permission denied.';
 $s_tag_filter_default = 'Połączone zgłoszenia (%1$s)';
 $s_tag_history_attached = 'Tag dołączony';
 $s_tag_history_detached = 'Tag odłączony';
@@ -1181,6 +1518,8 @@ $s_tag_related_issues = 'Powiązane zgłoszenia (%1$s)';
 $s_tag_stats_attached = 'Dołączone zgłoszenia: %1$s';
 $s_tag_create = 'Utwórz tag';
 $s_show_all_tags = 'WSZYSTKIE';
+
+# Time Tracking
 $s_time_tracking_billing_link = 'Śledzenie czasu';
 $s_time_tracking = 'Śledzenie czasu pracy';
 $s_time_tracking_time_spent = 'Spędzony czas:';
@@ -1193,8 +1532,13 @@ $s_total_time_for_issue = 'Całkowity czas obsługi zgłoszenia to %1$s';
 $s_time_tracking_stopwatch_start = 'Start';
 $s_time_tracking_stopwatch_stop = 'Stop';
 $s_time_tracking_stopwatch_reset = 'Resetuj';
+
 $s_access_denied = 'Odmowa dostępu.';
+
+# Project Page
 $s_development_team = 'Grupa programistów';
+
+# manage columns page
 $s_manage_columns_config = 'Zarządzanie kolumnami';
 $s_all_columns_title = 'Wszystkie dostępne kolumny';
 $s_csv_columns_title = 'Kolumny CSV';
@@ -1207,12 +1551,23 @@ $s_update_columns_as_my_default = 'Uaktualnij kolumny jako domyślne dla wszystk
 $s_reset_columns_configuration = 'Wyzeruj konfigurację kolumn';
 $s_copy_columns_from = 'Kopiuj kolumny z';
 $s_copy_columns_to = 'Kopiuj kolumny do';
+
+# due date
 $s_due_date = 'Termin realizacji';
 $s_overdue = 'Przeterminowane';
 $s_overdue_since = 'Opóźniony od %1$s';
+
+#account_view_page.php
 $s_view_account_title = 'Informacje o użytkowniku';
+
+# view_user_page.php
 $s_manage_user = 'Zarządzaj użytkownikiem';
+
+# separators
 $s_word_separator = '&#32;';
+$s_label = '%1$s:';
+
+# admin pages
 $s_install_information = 'MantisBT – informacje dotyczące instalacji';
 $s_database_information = 'MantisBT – informacje o bazie danych';
 $s_path_information = 'MantisBT – ścieżki';
@@ -1221,6 +1576,8 @@ $s_php_version = 'Wersja PHP';
 $s_adodb_version = 'Wersja ADOdb';
 $s_database_driver = 'Sterownik bazy danych';
 $s_database_version_description = 'Wersja bazy danych, opis';
+
+# months
 $s_month_january = 'styczeń';
 $s_month_february = 'luty';
 $s_month_march = 'marzec';
@@ -1233,7 +1590,11 @@ $s_month_september = 'wrzesień';
 $s_month_october = 'październik';
 $s_month_november = 'listopad';
 $s_month_december = 'grudzień';
+
+# Timeline Feature Strings
 $s_timeline_issue_created = '<span class="username">%1$s</span> utworzył zgłoszenie <span class="issue_id">%2$s</span>';
+$s_timeline_issue_file_added = '<span class="username">%1$s</span> attached file <em>%3$s</em> to issue <span class="issue_id">%2$s</span>';
+$s_timeline_issue_file_deleted = '<span class="username">%1$s</span> removed file <em>%3$s</em> from issue <span class="issue_id">%2$s</span>';
 $s_timeline_issue_note_created = '<span class="username">%1$s</span> skomentował zgłoszenie <span class="issue_id">%2$s</span>';
 $s_timeline_issue_monitor = '<span class="username">%1$s</span> obserwuje zgłoszenie <span class="issue_id">%2$s</span>';
 $s_timeline_issue_unmonitor = '<span class="username">%1$s</span> przestał obserwować zgłoszenie <span class="issue_id">%2$s</span>';
@@ -1244,10 +1605,16 @@ $s_timeline_issue_closed = '<span class="username">%1$s</span> zamknął zgłosz
 $s_timeline_issue_reopened = '<span class="username">%1$s</span> ponownie otworzył zgłoszenie <span class="issue_id">%2$s</span>';
 $s_timeline_issue_assigned = '<span class="username">%1$s</span> przypisał zgłoszenie <span class="issue_id">%2$s</span> do <span class="username">%3$s</span>';
 $s_timeline_issue_assigned_to_self = '<span class="username">%1$s</span> przypisał do siebie zgłoszenie <span class="issue_id">%2$s</span>';
+$s_timeline_issue_unassigned = '<span class="username">%1$s</span> unassigned issue <span class="issue_id">%2$s</span>';
 $s_timeline_no_activity = 'Brak aktywności w tym zakresie czasu.';
 $s_timeline_title = 'Oś czasu';
 $s_timeline_more = 'Więcej zdarzeń...';
+
+/**
+ * ERROR strings
+ */
 $s_missing_error_string = 'Brakujący ciąg błędu: %1$s';
+
 $MANTIS_ERROR[ERROR_GENERIC] = 'Wystąpił błąd podczas wykonywanej operacji. Możesz zgłosić błąd administratorowi.';
 $MANTIS_ERROR[ERROR_SQL] = 'Wykryto błąd SQL.';
 $MANTIS_ERROR[ERROR_REPORT] = 'Wystąpił błąd w zgłoszeniu.';
@@ -1276,6 +1643,8 @@ $MANTIS_ERROR[ERROR_PROJECT_NAME_NOT_UNIQUE] = 'Projekt o tej nazwie już istnie
 $MANTIS_ERROR[ERROR_PROJECT_NAME_INVALID] = 'Podano nieprawidłową nazwę projektu. Nazwa projektu nie może być pusta.';
 $MANTIS_ERROR[ERROR_USER_BY_NAME_NOT_FOUND] = 'Brak użytkownika o nazwie „%1$s”.';
 $MANTIS_ERROR[ERROR_USER_BY_ID_NOT_FOUND] = 'Brak użytkownika o id „%1$d”.';
+$MANTIS_ERROR[ERROR_USER_BY_EMAIL_NOT_FOUND] = 'User with email "%1$s" not found.';
+$MANTIS_ERROR[ERROR_USER_BY_REALNAME_NOT_FOUND] = 'User with real name "%1$s" not found.';
 $MANTIS_ERROR[ERROR_AUTH_INVALID_COOKIE] = 'Informacja o logowaniu przechowywana przez Twoją przeglądarkę jest nieprawidłowa.  Być może Twoje konto zostało usunięte.';
 $MANTIS_ERROR[ERROR_USER_PREFS_NOT_FOUND] = 'Nie można znaleźć ustawień tego użytkownika.';
 $MANTIS_ERROR[ERROR_NEWS_NOT_FOUND] = 'Nie znaleziono wiadomości.';
@@ -1355,27 +1724,45 @@ $MANTIS_ERROR[ERROR_EVENT_UNDECLARED] = 'Zdarzenie „%1$s” nie zostało jeszc
 $MANTIS_ERROR[ERROR_PLUGIN_NOT_REGISTERED] = 'Wtyczka „%1$s” nie jest zarejestrowana.';
 $MANTIS_ERROR[ERROR_PLUGIN_NOT_LOADED] = 'Wtyczka "%1$s" nie jest załadowana, upewnij się, że są spełnione jej zależności.';
 $MANTIS_ERROR[ERROR_PLUGIN_ALREADY_INSTALLED] = 'Wtyczka „%1$s” już jest zainstalowana.';
+$MANTIS_ERROR[ERROR_PLUGIN_CLASS_NOT_FOUND] = 'The "%2$s" Class is not defined in Plugin "%1$s".';
 $MANTIS_ERROR[ERROR_PLUGIN_PAGE_NOT_FOUND] = 'Strona „%2$s” nie istnieje we wtyczce „%1$s”.';
+$MANTIS_ERROR[ERROR_PLUGIN_FILE_NOT_FOUND] = 'File "%2$s" does not exist in Plugin "%1$s".';
 $MANTIS_ERROR[ERROR_PLUGIN_INSTALL_FAILED] = 'Instalacja wtyczki nie powiodła się: %1$s.';
 $MANTIS_ERROR[ERROR_PLUGIN_UPGRADE_FAILED] = 'Błąd aktualizacji schematu wtyczki w bloku %1$s.';
 $MANTIS_ERROR[ERROR_PLUGIN_UPGRADE_NEEDED] = 'W celu otwarcia strony, musisz zaktualizować wtyczkę „%1$s”.';
+$MANTIS_ERROR[ERROR_PLUGIN_INVALID_PAGE] = 'The format of the specified plugin page "%1$s" is invalid. It must match "Plugin[/path/to]/page".';
+$MANTIS_ERROR[ERROR_PLUGIN_INVALID_FILE] = 'The format of the specified plugin file "%1$s" is invalid. It must match "Plugin[/path/to]/file[.ext]".';
 $MANTIS_ERROR[ERROR_PLUGIN_GENERIC] = 'Wystąpił nieznany błąd „%1$s” w trakcie wykonywania kodu wtyczki „%2$s”.';
 $MANTIS_ERROR[ERROR_COLUMNS_DUPLICATE] = 'Pole „%1$s” zawiera dwa razy kolumnę „%2$s”.';
 $MANTIS_ERROR[ERROR_COLUMNS_INVALID] = 'Pole „%1$s” zawiera nieprawidłowe pole „%2$s”.';
 $MANTIS_ERROR[ERROR_SESSION_VAR_NOT_FOUND] = 'Zmienna sesyjna „%1$s” nie została znaleziona.';
 $MANTIS_ERROR[ERROR_SESSION_NOT_VALID] = 'Twoja sesja została unieważniona.';
 $MANTIS_ERROR[ERROR_FORM_TOKEN_INVALID] = 'Niewłaściwy token bezpieczeństwa. Może być to spowodowane wygaśnięciem sesji lub przypadkowo wysłanym dwukrotnie formularzem.';
+$MANTIS_ERROR[ERROR_CRYPTO_MASTER_SALT_INVALID] = 'For security reasons MantisBT will not operate when $g_crypto_master_salt is not specified correctly in config_inc.php or is shorter than 16 characters long.';
+$MANTIS_ERROR[ERROR_CRYPTO_CAN_NOT_GENERATE_STRONG_RANDOMNESS] = 'Unable to find a source of strong randomness for cryptographic purposes.';
 $MANTIS_ERROR[ERROR_INVALID_REQUEST_METHOD] = 'Tej strony nie moża uzyskać za pomocą tej metody.';
 $MANTIS_ERROR[ERROR_INVALID_SORT_FIELD] = 'Nieprawidłowe pole sortowania.';
 $MANTIS_ERROR[ERROR_INVALID_DATE_FORMAT] = 'Nieprawidłowy format daty.';
+$MANTIS_ERROR[ERROR_INVALID_RESOLUTION] = 'Resolution "%1$s" is not allowed for status "%2$s".';
 $MANTIS_ERROR[ERROR_UPDATING_TIMEZONE] = 'Nie można zaktualizować strefy czasowej.';
+$MANTIS_ERROR[ERROR_DEPRECATED_SUPERSEDED] = 'Deprecated functionality: "%1$s", use "%2$s" instead.';
+$MANTIS_ERROR[ERROR_DISPLAY_USER_ERROR_INLINE] = 'Warning: The system is configured to display MantisBT errors (E_USER_ERROR) inline. Program execution will continue; this may lead to system/data integrity issues.';
+$MANTIS_ERROR[ERROR_TYPE_MISMATCH] = 'Data Type mismatch. Enable detailed error messages for further information.';
+$MANTIS_ERROR[ERROR_BUG_CONFLICTING_EDIT] = 'This issue has been updated by another user, please return to the issue and submit your changes again.';
+$MANTIS_ERROR[ERROR_SPAM_SUSPECTED] = 'You have reached the allowed activity limit of %d events within the last %d seconds; your action has been blocked to avoid spam, please try again later.';
+$MANTIS_ERROR[ERROR_FIELD_TOO_LONG] = 'Field "%1$s" must be shorter or equal to %2$d characters long.';
+$MANTIS_ERROR[ERROR_API_TOKEN_NAME_NOT_UNIQUE] = 'API token name "%s" is already being used. Please go back and select another one.';
+
+# dropzone.js - placeholders format is defined by the library
 $s_dropzone_default_message = 'Upuść pliki tutaj aby przesłać (lub kliknij)';
 $s_dropzone_fallback_message = 'Twoja przeglądarka nie obsługuje metody drag\'n\'drop.';
+$s_dropzone_fallback_text = '';
 $s_dropzone_file_too_big = 'Plik jest za duży ({{filesize}}MiB). Maksymalny rozmiar pliku: {{maxFilesize}}MiB.';
 $s_dropzone_invalid_file_type = 'Nie możesz przesyłać plików tego typu.';
 $s_dropzone_response_error = 'Serwer odpowiedział kodem {{statusCode}}';
 $s_dropzone_cancel_upload = 'Anuluj przesyłanie';
 $s_dropzone_cancel_upload_confirmation = 'Czy na pewno chcesz przerwać przesyłanie?';
 $s_dropzone_remove_file = 'Usuń plik';
+$s_dropzone_remove_file_confirmation = '';
 $s_dropzone_max_files_exceeded = 'Nie możesz przesłać kolejnych plików.';
 $s_dropzone_not_supported = 'Dropzone.js nie obsługuje starszych przeglądarek!';
